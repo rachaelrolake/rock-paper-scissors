@@ -22,7 +22,7 @@ function autoPlay() {
 }
 
 function playGame(playerMove) {
-  if (totalMoves >= 12) {
+  if (totalMoves >= 10) {
       return;
   }
   
