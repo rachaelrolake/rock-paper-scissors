@@ -67,7 +67,7 @@ function updatedScoreElement() {
 }
 
 function displayFinalMessage() {
-  let finalMessage = (score.wins > score.losses) ? "You won against Computer. Good job!" : "Need more brain juice to beat Computer.";
+  let finalMessage = (score.wins > score.losses) ? "You won against Computer. Good job!" : "Need more brain juice to beat Computer!.";
   document.querySelector('.js-result').innerHTML = finalMessage;
 }
 
