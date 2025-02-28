@@ -29,12 +29,12 @@ function playGame(playerMove) {
   const computerMove = pickComputerMove();
   let result = '';
 
-  if (playerMove === 'Scissors') {
-      result = (computerMove === 'Rock') ? 'You lose.' : (computerMove === 'Paper') ? 'You win.' : 'Tie.';
-  } else if (playerMove === 'Paper') {
-      result = (computerMove === 'Rock') ? 'You win.' : (computerMove === 'Paper') ? 'Tie.' : 'You lose.';
-  } else if (playerMove === 'Rock') {
-      result = (computerMove === 'Rock') ? 'Tie.' : (computerMove === 'Paper') ? 'You lose.' : 'You win.';
+  if (playerMove === 'scissors') {
+      result = (computerMove === 'rock') ? 'You lose.' : (computerMove === 'paper') ? 'You win.' : 'Tie.';
+  } else if (playerMove === 'paper') {
+      result = (computerMove === 'rock') ? 'You win.' : (computerMove === 'paper') ? 'Tie.' : 'You lose.';
+  } else if (playerMove === 'rock') {
+      result = (computerMove === 'rock') ? 'Tie.' : (computerMove === 'paper') ? 'You lose.' : 'You win.';
   }
 
   if (result === 'You win.') {
@@ -73,7 +73,7 @@ function displayFinalMessage() {
 
 function pickComputerMove() {
   const randomNumber = Math.random();
-  return (randomNumber < 1 / 3) ? 'Rock' : (randomNumber < 2 / 3) ? 'Paper' : 'Scissors';
+  return (randomNumber < 1 / 3) ? 'rock' : (randomNumber < 2 / 3) ? 'paper' : 'scissors';
 }
 
 function resetGame() {
