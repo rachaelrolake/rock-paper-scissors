@@ -13,7 +13,7 @@ function autoPlay() {
       intervalId = setInterval(function () {
           const playerMove = pickComputerMove();
           playGame(playerMove);
-      }, 2000);
+      }, 1000);
       isAutoPlaying = true;
   } else {
       clearInterval(intervalId);
